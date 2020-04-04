@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Buy and Sell</title>
+    <base href="/" />
+    <link href="./lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="./lib/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="./lib/animate.css" rel="stylesheet" />
+    <link href="./lib/selectric/selectric.css" rel="stylesheet" />
+    <link href="./lib/swiper/css/swiper.min.css" rel="stylesheet" />
+    <link href="./lib/aos/aos.css" rel="stylesheet" />
+    <link href="./lib/Magnific-Popup/magnific-popup.css" rel="stylesheet" />
+    <link href="./css/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="main">
+      <div id="root"></div>
+    </div>
+    <script src="./lib/jquery-3.2.1.min.js"></script>
+    <script src="./lib/popper.min.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./lib/selectric/jquery.selectric.js"></script>
+    <script src="./lib/aos/aos.js"></script>
+    <script src="./lib/Magnific-Popup/jquery.magnific-popup.min.js"></script>
+    <script src="./lib/sticky-sidebar/ResizeSensor.min.js"></script>
+    <script src="./lib/sticky-sidebar/theia-sticky-sidebar.min.js"></script>
+    <script src="./lib/lib.js"></script>
+    <script src="./lib/sidr/jquery.sidr.min.js"></script>
+    <script src="./lib/swiper/js/swiper.min.js"></script>
+    <script src="./lib/Magnific-Popup/jquery.magnific-popup.min.js"></script>
+    <script src="./lib/custom/home.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#toggle-filters").sidr({
+          side: "left",
+          displace: false,
+          renaming: false,
+          name: "sidebar",
+          source: function () {
+            AOS.refresh();
+          },
+        });
+      });
+    </script>
+  </body>
+</html>
